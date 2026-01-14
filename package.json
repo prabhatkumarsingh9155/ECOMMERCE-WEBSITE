@@ -1,0 +1,32 @@
+{
+  "name": "shopeasy-ecommerce",
+  "version": "1.0.0",
+  "description": "Modern E-commerce Website built with React",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite"
+  },
+  "dependencies": {
+    "firebase": "^12.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "vite": "^4.5.14"
+  },
+  "keywords": [
+    "react",
+    "ecommerce",
+    "shopping",
+    "cart",
+    "modern",
+    "responsive",
+    "router"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

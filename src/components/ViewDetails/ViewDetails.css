@@ -1,0 +1,253 @@
+.vd-view-details-page {
+  padding: 2rem 0;
+  min-height: 80vh;
+  background: #f8f9fa;
+}
+
+.vd-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.vd-details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.vd-details-header .vd-back-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #495057;
+  padding: 0;
+  border-radius: 0;
+  transition: none;
+}
+
+.vd-details-header .vd-back-btn:hover {
+  background: none;
+  color: #495057;
+}
+
+.vd-details-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #212529;
+  white-space: nowrap;
+  flex: 1;
+  text-align: center;
+}
+
+.vd-details-section {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vd-details-section h3 {
+  margin: 0 0 1rem 0;
+  color: #212529;
+  font-size: 1.25rem;
+}
+
+.vd-summary-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.vd-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.9rem;
+}
+
+.vd-summary-row:last-child {
+  border-bottom: none;
+}
+
+.vd-summary-row span:first-child {
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.vd-summary-row span:last-child {
+  color: #212529;
+  font-weight: 600;
+}
+
+.vd-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.vd-item-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background: #f8f9fa;
+  align-items: flex-start;
+}
+
+.vd-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.vd-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.vd-item-info h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #212529;
+  word-wrap: break-word;
+}
+
+.vd-item-info p {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.vd-item-status {
+  background: #007bff;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.vd-transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.vd-transaction-card {
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.vd-transaction-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.vd-transaction-row span:first-child {
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.vd-transaction-row span:last-child {
+  color: #212529;
+  font-weight: 600;
+}
+
+.vd-status.failed {
+  color: #dc3545 !important;
+  font-weight: 600;
+}
+
+.vd-status.success {
+  color: #28a745 !important;
+  font-weight: 600;
+}
+
+.vd-address-card {
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.vd-address-card p {
+  margin: 0.25rem 0;
+  color: #495057;
+  line-height: 1.5;
+}
+
+.vd-loading-container {
+  text-align: center;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.vd-loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #dee2e6;
+  border-radius: 50%;
+  border-top-color: #495057;
+  animation: vd-spin 1s ease-in-out infinite;
+}
+
+@keyframes vd-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .vd-view-details-page {
+    padding: 1rem 0;
+  }
+  
+  .vd-item-card {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .vd-item-image {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+  }
+  
+  .vd-item-info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .vd-item-info h4 {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .vd-item-info p {
+    margin: 0.25rem 0;
+    font-size: 0.8rem;
+  }
+  
+  .vd-item-status {
+    margin-top: 0.5rem;
+  }
+}

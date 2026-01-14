@@ -1,0 +1,62 @@
+export const sampleProducts = [
+  {
+    id: 1,
+    name: "Premium Wireless Headphones",
+    price: 299,
+    originalPrice: 399,
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+    category: "electronics",
+    rating: 4.8,
+    reviews: 1250,
+    description: "High-quality wireless headphones with noise cancellation",
+    specifications: ["Bluetooth 5.0", "30h Battery", "Active Noise Cancellation"],
+    inStock: true,
+    featured: true,
+    bestSeller: true
+  },
+  {
+    id: 2,
+    name: "Smart Fitness Watch",
+    price: 199,
+    originalPrice: 249,
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
+    category: "electronics",
+    rating: 4.6,
+    reviews: 890,
+    description: "Advanced fitness tracking with heart rate monitor",
+    specifications: ["GPS", "Heart Rate Monitor", "7-day Battery"],
+    inStock: true,
+    featured: true,
+    bestSeller: false
+  },
+  {
+    id: 3,
+    name: "Designer Running Shoes",
+    price: 129,
+    originalPrice: 179,
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    category: "fashion",
+    rating: 4.7,
+    reviews: 2100,
+    description: "Comfortable running shoes with premium design",
+    specifications: ["Breathable Mesh", "Cushioned Sole", "Lightweight"],
+    inStock: true,
+    featured: false,
+    bestSeller: true
+  },
+  {
+    id: 4,
+    name: "Premium Coffee Maker",
+    price: 249,
+    originalPrice: 299,
+    image: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400",
+    category: "home",
+    rating: 4.5,
+    reviews: 650,
+    description: "Professional-grade coffee maker for perfect brew",
+    specifications: ["15 Bar Pressure", "Milk Frother", "Programmable"],
+    inStock: true,
+    featured: true,
+    bestSeller: false
+  }
+];
